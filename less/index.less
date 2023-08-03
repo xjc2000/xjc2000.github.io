@@ -2,9 +2,17 @@
 
 @import "./base";
 
+// 通用
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 // 首页样式
 body {
-    background-color: #f9fafb;
+    // background-color: rgba(162, 176, 161);
+    background-color: rgba(0, 0, 0)
 }
 
 @vw: 3.752vw;
@@ -17,32 +25,109 @@ header {
     padding: 0 (15/@vw);
     height: (60/@vw);
     width: (375/@vw);
+    background-color: #fff;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 1;
 
     // 左边
     .left {
+        // color: #EEE;
+        color: #4C4948;
         font-size: (18.2/@vw);
         font-weight: 700;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
     }
 
     // 右边
-    .right a {
-        flex: 1;
-        padding-right: (14/@vw);
+    .right {
 
-        &:last-child {
-            padding-right: 0;
+        a {
+            flex: 1;
+            margin-right: (14/@vw);
+            font-weight: 550;
+            font-size: (14/@vw);
+
+            // width: (16/@vw);
+            // height: (20/@vw);
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
 
 // 标题
-.title {
-    position: absolute;
-    img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+.topTitle {
+    // position:absolute;绝对定位，现在不需要
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url(../pic/pic_1.jpg) no-repeat top center;
+    background-size: cover;
+    // filter: brightness(50%);
+    // background-attachment: fixed;固定页面使用，本次不用固定
+    background-position: top;
+    // 设置标题字体
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: (26/@vw);
+        color: #FFF;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     }
+
+}
+
+// 内容
+.content {
+    ul {
+        li {
+            // width: (363.6/@vw);
+            // height: (406/@vw);
+            margin: (20/@vw) (5/@vw) 0 (5/@vw);
+            // padding: 0 (5/@vw);
+            border-radius: (10/@vw);
+            // background-color: pink;
+            border: (0.3/@vw) solid white;
+
+            img {
+                width: 100%;
+                height: (230/@vw);
+                border-radius: (10/@vw);
+            }
+
+            .text {
+                margin-top: 0;
+                padding: (20/@vw) (20/@vw) (30/@vw);
+                width: 100%;
+                height: (175.3/@vw);
+                text-align: center;
+
+                // 图片下的标题
+                h3 {
+                    font-size: (20/@vw);
+                    color: rgba(221, 221, 221);
+                }
+
+                // 标题下的小字
+                div:nth-child(2) {
+                    margin: (6/@vw) 0;
+                    display: flex;
+                    font-size: (12.6/@vw);
+                    color: rgba(133, 133, 133);
+                }
+
+                // 描述
+                div:last-child {
+                    font-size: (14/@vw);
+                    font-weight: 600;
+                    color: rgba(157, 157, 157);
+                }
+            }
+        }
+    }
+
 }
