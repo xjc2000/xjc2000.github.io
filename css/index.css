@@ -31,8 +31,13 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+html,
 body {
-  background-color: #f9fafb;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgba(0, 0, 0);
 }
 /* 头部 */
 header {
@@ -42,25 +47,71 @@ header {
   padding: 0 3.9978678vw;
   height: 15.99147122vw;
   width: 99.9466951vw;
+  background-color: #fff;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 1;
 }
 header .left {
+  color: #4C4948;
   font-size: 4.85074627vw;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 header .right a {
   flex: 1;
-  padding-right: 3.73134328vw;
+  margin-right: 3.73134328vw;
+  font-weight: 550;
+  font-size: 3.73134328vw;
 }
 header .right a:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
-.title {
-  position: absolute;
-}
-.title img {
-  position: relative;
+.topTitle {
+  display: flex;
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: url(../pic/pic_1.jpg) no-repeat top center;
+  background-size: cover;
+  background-position: top;
+  align-items: center;
+  justify-content: center;
+}
+.topTitle h1 {
+  font-size: 6.92963753vw;
+  color: #FFF;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.content ul li {
+  margin: 5.33049041vw 1.3326226vw 0 1.3326226vw;
+  border-radius: 2.6652452vw;
+  border: 0.07995736vw solid white;
+}
+.content ul li img {
+  width: 100%;
+  height: 61.30063966vw;
+  border-radius: 2.6652452vw;
+}
+.content ul li .text {
+  margin-top: 0;
+  padding: 5.33049041vw 5.33049041vw 7.99573561vw;
+  width: 100%;
+  height: 46.7217484vw;
+  text-align: center;
+}
+.content ul li .text h3 {
+  font-size: 5.33049041vw;
+  color: rgba(221, 221, 221);
+}
+.content ul li .text div:nth-child(2) {
+  margin: 1.59914712vw 0;
+  display: flex;
+  font-size: 3.35820896vw;
+  color: rgba(133, 133, 133);
+}
+.content ul li .text div:last-child {
+  font-size: 3.73134328vw;
+  font-weight: 600;
+  color: rgba(157, 157, 157);
 }
