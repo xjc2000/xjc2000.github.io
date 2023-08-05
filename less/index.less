@@ -83,15 +83,17 @@ header {
 
 // 内容
 .content {
+    margin-left: (5/@vw);
+    margin-right: (5/@vw);
     ul {
         li {
             // width: (363.6/@vw);
             // height: (406/@vw);
-            margin: (20/@vw) (5/@vw) 0 (5/@vw);
+            margin-top: (20/@vw);
             // padding: 0 (5/@vw);
             border-radius: (10/@vw);
             // background-color: pink;
-            border: (0.3/@vw) solid white;
+            border: (1/@vw) solid #3d3d3f;
 
             img {
                 width: 100%;
@@ -105,6 +107,7 @@ header {
                 width: 100%;
                 height: (175.3/@vw);
                 text-align: center;
+                background-color: rgba(18, 18, 18);
 
                 // 图片下的标题
                 h3 {
@@ -129,5 +132,51 @@ header {
             }
         }
     }
+    // 页码跳转
+    .pageGo {
+        display: flex;
+        width: 100%;
+        height: (35/@vw);
+        margin-top: (20/@vw);
+        align-items: center;
+        justify-content:center;
+        a {
+            width: (35/@vw);
+            height: (35/@vw);
+            margin: 0 (6/@vw);
+            text-align: center;
+            line-height: (35/@vw);
+            background-color: rgba(18, 18, 18);
+            color: #99A9BF;
+            font-size: (14/@vw);
+            // box-shadow: 0 (3/@vw) (8/@vw) (6/@vw) rgba(51, 52, 53);盒子阴影，这里不需要
+            border: (1/@vw) solid #3d3d3f;
+            border-radius: (8/@vw);
+        }
+        // 当前页
+        span {
+            width: (35/@vw);
+            height: (35/@vw);
+            margin: 0 (6/@vw);
+            color: #99A9BF;
+            font-size: (14/@vw);
+            text-align: center;
+            line-height: (35/@vw);
+            background-color: rgba(18, 18, 18);
+            border: (1/@vw) solid #3d3d3f;
+            border-radius: (8/@vw);
+        }
+    }
 
+    // 个人简介
+    .introdMf {
+        width: 100%;
+        height: (382/@vw);
+        margin-top: (20/@vw);
+        padding: (20/@vw) (24/@vw);
+        border-radius: (10/@vw);
+        background-color: rgba(4, 4, 4);
+        border: (1/@vw) solid #3d3d3f;
+    }
 }
+

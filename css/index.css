@@ -83,10 +83,14 @@ header .right a:last-child {
   color: #FFF;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
+.content {
+  margin-left: 1.3326226vw;
+  margin-right: 1.3326226vw;
+}
 .content ul li {
-  margin: 5.33049041vw 1.3326226vw 0 1.3326226vw;
+  margin-top: 5.33049041vw;
   border-radius: 2.6652452vw;
-  border: 0.07995736vw solid white;
+  border: 0.26652452vw solid #3d3d3f;
 }
 .content ul li img {
   width: 100%;
@@ -99,6 +103,7 @@ header .right a:last-child {
   width: 100%;
   height: 46.7217484vw;
   text-align: center;
+  background-color: rgba(18, 18, 18);
 }
 .content ul li .text h3 {
   font-size: 5.33049041vw;
@@ -114,4 +119,45 @@ header .right a:last-child {
   font-size: 3.73134328vw;
   font-weight: 600;
   color: rgba(157, 157, 157);
+}
+.content .pageGo {
+  display: flex;
+  width: 100%;
+  height: 9.32835821vw;
+  margin-top: 5.33049041vw;
+  align-items: center;
+  justify-content: center;
+}
+.content .pageGo a {
+  width: 9.32835821vw;
+  height: 9.32835821vw;
+  margin: 0 1.59914712vw;
+  text-align: center;
+  line-height: 9.32835821vw;
+  background-color: rgba(18, 18, 18);
+  color: #99A9BF;
+  font-size: 3.73134328vw;
+  border: 0.26652452vw solid #3d3d3f;
+  border-radius: 2.13219616vw;
+}
+.content .pageGo span {
+  width: 9.32835821vw;
+  height: 9.32835821vw;
+  margin: 0 1.59914712vw;
+  color: #99A9BF;
+  font-size: 3.73134328vw;
+  text-align: center;
+  line-height: 9.32835821vw;
+  background-color: rgba(18, 18, 18);
+  border: 0.26652452vw solid #3d3d3f;
+  border-radius: 2.13219616vw;
+}
+.content .introdMf {
+  width: 100%;
+  height: 101.81236674vw;
+  margin-top: 5.33049041vw;
+  padding: 5.33049041vw 6.39658849vw;
+  border-radius: 2.6652452vw;
+  background-color: rgba(4, 4, 4);
+  border: 0.26652452vw solid #3d3d3f;
 }
