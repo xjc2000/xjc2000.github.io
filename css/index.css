@@ -81,7 +81,7 @@ header .right a:last-child {
 .topTitle h1 {
   font-size: 6.92963753vw;
   color: #FFF;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 .content {
   margin-left: 1.3326226vw;
@@ -160,4 +160,68 @@ header .right a:last-child {
   border-radius: 2.6652452vw;
   background-color: rgba(4, 4, 4);
   border: 0.26652452vw solid #3d3d3f;
+}
+.content .introdMf .top {
+  width: 84.2217484vw;
+  height: 46.90831557vw;
+  text-align: center;
+}
+.content .introdMf .top img {
+  width: 29.31769723vw;
+  height: 29.31769723vw;
+  border-radius: 50%;
+}
+.content .introdMf .top div:nth-child(2) {
+  width: 84.2217484vw;
+  height: 11.72707889vw;
+  color: rgba(208, 208, 208);
+  line-height: 11.72707889vw;
+  font-size: 5.86353945vw;
+  font-weight: 700;
+}
+.content .introdMf .top div:last-child {
+  width: 84.2217484vw;
+  height: 5.86353945vw;
+  color: rgba(148, 148, 148);
+  line-height: 5.86353945vw;
+  font-size: 3.73134328vw;
+  font-weight: 600;
+}
+.content .introdMf .lable {
+  width: 100%;
+  height: 18.12366738vw;
+  margin-top: 0.53304904vw;
+  line-height: 18.12366738vw;
+  text-align: center;
+  font-size: 3.73134328vw;
+  color: rgba(230, 230, 230);
+}
+.content .introdMf .func {
+  width: 100%;
+  height: 9.59488273vw;
+  margin-top: 3.73134328vw;
+  line-height: 9.59488273vw;
+  text-align: center;
+  color: rgba(180, 180, 180);
+  background-color: rgba(31, 31, 31);
+  border-radius: 2.13219616vw;
+  font-size: 3.73134328vw;
+  font-weight: 600;
+}
+.content .introdMf .guide {
+  display: flex;
+  width: 100%;
+  height: 10.66098081vw;
+  margin-top: 1.59914712vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content .introdMf .guide .iconfont {
+  width: 4.79744136vw;
+  height: 4.79744136vw;
+  font-size: 4.79744136vw;
+  margin: 0 2.13219616vw;
+  line-height: 4.26439232vw;
+  color: rgba(180, 180, 180);
 }
